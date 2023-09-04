@@ -28,6 +28,9 @@ export const ContactsPage = ({contacts, addToContacts}) => {
   };
 
   useEffect(() => {
+    if(!contacts) {
+      return
+    }
     const duplicateCheck = contacts.some(contact => contact.name.toLowerCase() === name.toLocaleLowerCase())
     setIsDuplicate(duplicateCheck)
   }, [name, contacts])

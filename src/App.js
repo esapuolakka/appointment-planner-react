@@ -22,8 +22,8 @@ function App() {
   //   }
   // ]
 
-  const [contacts, setContacts] = useState('')
-  const [appointments, setAppointments] = useState('')
+  const [contacts, setContacts] = useState([])
+  const [appointments, setAppointments] = useState([])
 
   const addToContacts = (newContact) => {
     setContacts((prevContacts) => [...prevContacts, newContact])

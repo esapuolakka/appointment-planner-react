@@ -6,24 +6,24 @@ import { ContactsPage } from "./containers/contactsPage/ContactsPage";
 
 function App() {
 
-  const defaultContacts = [
-    {
-      name: 'James Bond',
-      phone: '007-007-007',
-      email: 'james.bond@mi16.uk'
-    }
-  ]
-  const defaultAppointments = [
-    {
-      title: 'lunch meeting',
-      contact: 'James Bond',
-      date: '2023-09-07',
-      time: '12:00'
-    }
-  ]
+  // const defaultContacts = [
+  //   {
+  //     name: 'James Bond',
+  //     phone: '007-007-007',
+  //     email: 'james.bond@mi16.uk'
+  //   }
+  // ]
+  // const defaultAppointments = [
+  //   {
+  //     title: 'lunch meeting',
+  //     contact: 'James Bond',
+  //     date: '2023-09-07',
+  //     time: '12:00'
+  //   }
+  // ]
 
-  const [contacts, setContacts] = useState(defaultContacts)
-  const [appointments, setAppointments] = useState(defaultAppointments)
+  const [contacts, setContacts] = useState('')
+  const [appointments, setAppointments] = useState('')
 
   const addToContacts = (newContact) => {
     setContacts((prevContacts) => [...prevContacts, newContact])
